@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+
+.container {
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  width: 1000px;
+  height: 60vw;
+  margin: 0 auto;
+}
+
+.navigation-list, .gallery figure figcaption, .bloc-text, .menu-list .menu-item, footer {
+  background-color: gray;
+  filter: brightness(180%);
+}
+
+.navigation-list, .gallery figure figcaption, .bloc-text, .menu-list, .menu-item:hover {
+  box-shadow: 1.5px 1.5px 5px 1px #4d4d4d;
+} 
+
+.nav-item:hover, .menu-item:hover {
+  cursor: pointer;
+  background-color: #333333;
+ 
+}
+
+.nav-item:hover a, .menu-item:hover a {
+  color: #fff;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  height: 50px;
+}
+
+.nav-item {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item a{
+  font-size: 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery figure {
+  width: 250px;
+  height: 350px;
+}
+
+.gallery figure img {
+  display: block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.gallery figure figcaption {
+  padding: 15px;
+}
+
+.bloc-text {
+  width: 625px;
+  margin-top: 5px;
+  padding: 20px;
+}
+
+.bloc-text {
+  display: flex;
+  flex-flow: column ;
+}
+
+.bloc-text a {
+  align-self: flex-end;
+} 
+
+.bloc-text a:hover {
+  text-decoration: underline;
+}
+
+.menu-list {
+  width: 250px;
+  list-style: none;
+}
+
+.menu-list .styx {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 40px;
+}
+
+.menu-item img {
+  margin: 0 15px;
+}
+
+.menu-item:hover img {
+  filter: brightness(50%);
+}
+
+.block-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  color: darkred;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  color: #fff;
+  background-color: dimgray;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  color: #404040;
+}
